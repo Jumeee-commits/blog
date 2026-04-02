@@ -82,6 +82,80 @@ ul {
 .tag.travel { background-color: var(--accent-teal); }
 .tag.fun { background-color: var(--accent-pink); }
 
+/* Header Styles */
+.header {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--bg-white);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
+.nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-list {
+  display: flex;
+  gap: 2rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Hero Slider Styles */
+.hero-slider {
+  margin-bottom: 4rem;
+}
+
+.slide-item {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  color: white;
+  position: relative;
+}
+
+.slide-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.slide-title {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 4px;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.slide-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+}
+
 /* Slick Slider Custom Styles */
 .slick-prev:before, .slick-next:before {
   color: var(--primary-color) !important;
