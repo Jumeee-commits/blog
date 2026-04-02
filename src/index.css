@@ -1,0 +1,88 @@
+:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #666666;
+  --accent-blue: #3b82f6; /* Technology */
+  --accent-yellow: #f59e0b; /* Fashion */
+  --accent-teal: #14b8a6; /* Travel */
+  --accent-pink: #ec4899; /* Fun */
+  --bg-white: #ffffff;
+  --bg-light: #f9fafb;
+  --border-color: #e5e7eb;
+  --font-main: 'Inter', sans-serif;
+  --font-heading: 'Poppins', sans-serif;
+  --max-width: 1200px;
+  --transition: all 0.3s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-white);
+  color: var(--primary-color);
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Utilities */
+.btn-primary {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.btn-primary:hover {
+  background-color: #333;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.tag {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.tag.tech { background-color: var(--accent-blue); }
+.tag.fashion { background-color: var(--accent-yellow); }
+.tag.travel { background-color: var(--accent-teal); }
+.tag.fun { background-color: var(--accent-pink); }
+
+/* Slick Slider Custom Styles */
+.slick-prev:before, .slick-next:before {
+  color: var(--primary-color) !important;
+}
